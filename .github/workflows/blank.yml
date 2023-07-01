@@ -6,12 +6,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: xmrth checkin
-			uses: actions/setup-python@v2
-			with:
-				python-version: 3.9
+      - name: xmrth_checkin
+		uses: actions/setup-python@v2
+		with:
+			python-version: 3.9
         	run: |
-				bash xmrth_checkin.sh
+			bash xmrth_checkin.sh
 					
 				
 				
