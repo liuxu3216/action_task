@@ -5,14 +5,16 @@ on: [push]
   # schedule:
   #   - cron '0 23 * * *'
 jobs:
-  build:
+  	login_check:
     runs-on: ubuntu-latest
     steps:
-		  - uses: actions/setup-python@v1
-		    with:
-          python-version: 3.9
-        run: |
-          python ./xmrth_checkin.py
+				- name: python_env
+		  	  uses: actions/checkout@v1
+				  with:
+         		 python-version: 3.9
+					run: |
+						python ./xmrth_checkin.py
+            
             
 				
 				
