@@ -8,11 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-		  uses: actions/setup-python@v1
-		  with:
-        python-version: 3.9
-          run: |
-            python ./xmrth_checkin.py
+		  - uses: actions/setup-python@v1
+		    with:
+          python-version: 3.9
+        run: |
+          python ./xmrth_checkin.py
             
 				
 				
