@@ -1,4 +1,4 @@
-#/bin/bash
+
 import requests
 
 url = 'https://xmrth.fun/user/checkin'
