@@ -1,4 +1,4 @@
-name: 'GitHub Actions CSDN Email Bot'
+name: login_checkin
 
 on:
   push:
@@ -10,9 +10,10 @@ jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - name: Not on Monday or Wednesday
-        
-        run: echo "This step will be skipped on Monday and Wednesday"
-      - name: Every time
-        run: echo "This step will always run"
+      - name: python_env
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.6
+      - name: 'work'
+        run: python ./xmrth_checkin.py
 
