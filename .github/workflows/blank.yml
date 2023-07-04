@@ -10,5 +10,5 @@ jobs:
         with:
           python-version: 3.9
       - name: 'run'
-        run: python action_task/.github/xmrth_checkin.py
+        run: python xmrth_checkin.py
 
