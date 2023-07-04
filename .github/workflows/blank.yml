@@ -1,5 +1,4 @@
 name: login_checkin
-
 on:  [ push ]
 jobs:
   test_schedule:
