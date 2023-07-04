@@ -1,5 +1,9 @@
 name: login_checkin
-on:  [ push ]
+on:  
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 15 * * *'
 jobs:
   test_schedule:
     runs-on: ubuntu-latest
