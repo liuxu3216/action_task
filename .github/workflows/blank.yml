@@ -18,6 +18,9 @@ jobs:
             pip install --upgrade pip
             pip install -r ./requirements.txt
       - name: 'run'
+        env:
+          username: ${{ security.XMRTH_LOGIN_USER}}
+          passwd: ${{security.XMRTH_LOGIN_PASSWD}}
         run: |
           echo 
           python ./xmrth_checkin.py
