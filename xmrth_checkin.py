@@ -16,8 +16,8 @@ header = {
 login_url = 'https://xmrth.fun/auth/login'
 post_data = {
     'fp': 'f709e114f40b7eb75b3da940b44a05ab',
-    'email': '458137665@qq.com',
-    'passwd': '1q2w3e```',
+    'email': username,
+    'passwd': passwd,
     'code': ''
 }
 # 使用session直接post请求
