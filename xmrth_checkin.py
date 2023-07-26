@@ -1,5 +1,7 @@
-import requests
 import json
+import os
+
+import requests
 
 mf = requests.session()
 # 因为原始的session.cookies 没有save()方法，所以需要用到cookielib中的方法LWPCookieJar，
@@ -14,6 +16,8 @@ header = {
 }
 # 使用cookies登录
 login_url = 'https://xmrth.fun/auth/login'
+username = os.environ.get('username')
+passwd = os.environ.get('passwd')
 post_data = {
     'fp': 'f709e114f40b7eb75b3da940b44a05ab',
     'email': username,

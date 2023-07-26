@@ -19,8 +19,8 @@ jobs:
             pip install -r ./requirements.txt
       - name: 'run'
         env:
-          username: ${{ security.XMRTH_LOGIN_USER}}
-          passwd: ${{security.XMRTH_LOGIN_PASSWD}}
+          username: ${{ secrets.XMRTH_LOGIN_USER}}
+          passwd: ${{secrets.XMRTH_LOGIN_PASSWD}}
         run: |
           echo 
           python ./xmrth_checkin.py
