@@ -8,9 +8,9 @@ jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@5
+      - uses: actions/checkout@4
       - name: python_env
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v4
         with:
           python-version: 3.9
       - name: 'Install requirements'
