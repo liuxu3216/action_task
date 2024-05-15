@@ -8,9 +8,11 @@ jobs:
   test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@2
       - name: python_env
-        uses: actions/setup-python@main
+        uses: actions/setup-python@2
+        with:
+          python-version: 3.9.18
       - name: 'Install requirements'
         run: |
             pip install --upgrade pip
