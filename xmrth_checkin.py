@@ -41,4 +41,4 @@ headers = {
 # 与 get 请求一样，r 为响应对象
 r = mf.post(url, headers=headers, cookies=resp.cookies)
 # 查看响应结果
-print(r.json())
+print(r)
