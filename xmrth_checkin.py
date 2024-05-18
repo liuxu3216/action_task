@@ -26,7 +26,7 @@ post_data = {
 }
 # 使用session直接post请求
 resp = mf.post(login_url, data=post_data, headers=header)
-print(json.loads(resp.text))
+# print(json.loads(resp.text))
 # 登录成功之后，将cookie保存在本地文件中
 login_cookies = resp.cookies
 print(login_cookies)
